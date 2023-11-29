@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Transmisión RTSP en Vivo</title>
+    <!-- Incluye el enlace al reproductor de video.js -->
+    <link href="https://vjs.zencdn.net/7.11.8/video-js.css" rel="stylesheet">
+    <script src="https://vjs.zencdn.net/7.11.8/video.js"></script>
 </head>
 <body>
-    <h1>Hola, esta es mi página web en GitHub</h1>
+
+    <!-- Contenedor del reproductor de video -->
+    <div id="video-container">
+        <video id="videoPlayer" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
+            <source src="rtsp://gad:p.123456@181.196.254.106/97/1" type="application/x-mpegURL">
+            <!-- Agrega más formatos de video según sea necesario -->
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div>
+
 </body>
 </html>
